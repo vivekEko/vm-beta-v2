@@ -1,0 +1,21 @@
+/* Google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Caladea:wght@400;700&family=Oswald:wght@200;300;400;500;600;700&display=swap");
+
+/* Tailwind classes */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Fonts */
+.font-oswald {
+  font-family: "Oswald", sans-serif;
+}
+
+.font-caladea {
+  font-family: "Caladea", serif;
+}
+
+/* Text stroke */
+.text-stroke {
+  -webkit-text-stroke: 1px white;
+}
