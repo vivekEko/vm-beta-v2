@@ -19,3 +19,12 @@
 .text-stroke {
   -webkit-text-stroke: 1px white;
 }
+
+/* radial gradient */
+.radial-gradient {
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    #f1400b 45.1%,
+    rgba(241, 64, 11, 0) 100%
+  );
+}

@@ -7,7 +7,7 @@ import translate_Icon from "../../assets/img/landingPage/translate_Icon.png";
 
 const Header = () => {
   return (
-    <header className="w-[90%] sm:w-[95%] mx-auto">
+    <header className="w-[90%] sm:w-[95%] mx-auto absolute top-0 left-0 right-0 pt-5">
       <h1 className=" text-2xl font-medium text-white text-right mb-5 md:hidden">
         MENU
       </h1>
@@ -24,7 +24,7 @@ const Header = () => {
         </div>
       </div>
 
-      <div className="flex border-white border-2 my-10 justify-between w-[70%] min-w-[250px] mx-auto md:hidden">
+      <div className="md:hidden border-white border-2 my-10 justify-between w-[70%] min-w-[250px] mx-auto hidden">
         <input
           type="text"
           placeholder="Search"
@@ -33,7 +33,7 @@ const Header = () => {
         <img src={searchIcon} alt="search" className=" p-2" />
       </div>
       {/* three mantras */}
-      <div className="text-white font-semibold flex flex-col text-xl md:flex-row gap-5 md:gap-20 md:mt-5 justify-center items-center">
+      <div className="text-white  flex flex-col text-xl md:flex-row gap-5 md:gap-20 md:mt-5 justify-center items-center">
         <h1 className="uppercase">Srimathe Ramanujaya Nama:</h1>
         <h1 className="uppercase">Srimath Varavaramunaye Nama:</h1>
         <h1 className="uppercase">Sri vanacha Mahamunibyo Nama:</h1>
