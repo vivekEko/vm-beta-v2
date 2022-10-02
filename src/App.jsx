@@ -7,6 +7,7 @@ import Header from "./components/globalComponents/Header";
 // Pages
 import LandingPage from "./pages/LandingPage";
 import AboutPage from "./pages/aboutPage";
+import OtherTemplesPage from "./pages/OtherTemplesPage";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route path="*" element={<LandingPage />} />
           <Route exact path="/" element={<LandingPage />} />
           <Route exact path="/about-us" element={<AboutPage />} />
+          <Route exact path="/other-temples" element={<OtherTemplesPage />} />
         </Routes>
       </Router>
     </div>
