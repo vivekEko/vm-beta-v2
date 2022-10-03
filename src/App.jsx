@@ -8,6 +8,7 @@ import Header from "./components/globalComponents/Header";
 import LandingPage from "./pages/LandingPage";
 import AboutPage from "./pages/aboutPage";
 import OtherTemplesPage from "./pages/OtherTemplesPage";
+import TempleHistory from "./pages/TempleHistory";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route exact path="/" element={<LandingPage />} />
           <Route exact path="/about-us" element={<AboutPage />} />
           <Route exact path="/other-temples" element={<OtherTemplesPage />} />
+          <Route exact path="/temple-history" element={<TempleHistory />} />
         </Routes>
       </Router>
     </div>

@@ -49,7 +49,13 @@ const OtherTemplesPage = () => {
             key={index}
             style={{ backgroundColor: data?.bg_color, color: data?.text_color }}
           >
-            <div className="w-[90%] md:w-[80%] mx-auto flex flex-col md:flex-row justify-between items-center gap-20 pt-80 md:pt-48 flex-1 pb-20">
+            <div
+              className={`  w-[90%] md:w-[80%] mx-auto flex flex-col ${
+                index === 0 || index % 2 === 0
+                  ? "md:flex-row"
+                  : "md:flex-row-reverse"
+              } md:flex-row justify-between items-center gap-20 pt-80 md:pt-48 flex-1 pb-20`}
+            >
               <div className={` flex-1 `}>
                 <h1 className="text-4xl uppercase">{data?.heading}</h1>
                 <div className="mt-20 font-caladea ">

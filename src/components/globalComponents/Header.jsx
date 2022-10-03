@@ -20,6 +20,7 @@ const Header = () => {
     },
     {
       link_name: "vanamamalai temple",
+      link_address: "/temple-history",
     },
     {
       link_name: "other temples",
