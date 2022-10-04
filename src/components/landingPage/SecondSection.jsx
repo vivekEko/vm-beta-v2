@@ -14,15 +14,18 @@ const SecondSection = () => {
         Sri varamangai nachiyar sametha sri deivanayaga perumal
       </h2>
 
-      <p className="font-caladea text-center w-[80%] mx-auto mb-5">
+      <p
+        className="font-caladea text-center w-[80%] md:max-w-[70%]
+      lg:max-w-[60%] xl:max-w-[50%] mx-auto mb-5"
+      >
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
         pellentesque quam vitae ornare porta. Vivamus pretium eleifend risus
         laoreet pretium. Ut sit amet finibus metus, nec cursus lacus.{" "}
       </p>
 
-      <div className="p-3 bg-[#282626] text-white w-fit mx-auto">
+      <button className="p-3 bg-[#282626] text-white w-fit mx-auto block active:scale-95 transition-all">
         <span>READ MORE</span>
-      </div>
+      </button>
 
       <div className="mt-5 flex items-end justify-between gap-5">
         <div className="w-full">

@@ -21,7 +21,7 @@ const FourthSection = () => {
           </p>
 
           <div className="flex justify-center md:justify-start w-[80%] mx-auto ">
-            <button className="p-3 bg-[#282626] text-white w-fit  ">
+            <button className="p-3 bg-[#282626] text-white w-fit active:scale-95 transition-all ">
               READ MORE
             </button>
           </div>

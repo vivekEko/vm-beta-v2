@@ -7,9 +7,16 @@ import logo from "../../assets/img/landingPage/vm_logo.png";
 import searchIcon from "../../assets/img/landingPage/searchIcon.png";
 import translate_Icon from "../../assets/img/landingPage/translate_Icon.png";
 
+// recoil
+import { useRecoilState } from "recoil";
+import menuStatusAtom from "../../recoil/header/menuStatusAtom";
+
+// components
+import Menu from "./Menu";
+
 const Header = () => {
-  // local variables
-  const [menuIsVisible, setMenuIsVisible] = useState(false);
+  // global variables
+  const [menuIsVisible, setMenuIsVisible] = useRecoilState(menuStatusAtom);
 
   const menuItems = [
     {
@@ -53,18 +60,19 @@ const Header = () => {
     },
   ];
 
-  useEffect(() => {
-    console.log(menuIsVisible);
-  }, [menuIsVisible]);
-
   const closeMenu = () => {
     setMenuIsVisible(false);
   };
 
   const ref = useDetectClickOutside({ onTriggered: closeMenu });
+
+  useEffect(() => {
+    console.log("menuIsVisible: ", menuIsVisible);
+  }, [menuIsVisible]);
+
   return (
     <header className="w-[90%] sm:w-[95%] mx-auto absolute top-0 left-0 right-0 pt-5">
-      <div>
+      <div ref={ref}>
         <h1
           onClick={() => setMenuIsVisible(!menuIsVisible)}
           className={` ${
@@ -77,7 +85,6 @@ const Header = () => {
         </h1>
 
         <div
-          onClick={(e) => e.stopPropagation()}
           className={` ${
             menuIsVisible
               ? "block z-[999] fixed top-20 right-5 md:left-12 md:right-auto"
@@ -102,20 +109,13 @@ const Header = () => {
 
       <div className="flex justify-center md:justify-between items-center pt-20 md:pt-0 ">
         <div className="flex-1 hidden md:block">
-          <h1
-            onClick={() => setMenuIsVisible(!menuIsVisible)}
-            className={` ${
-              menuIsVisible
-                ? "border-white"
-                : "border-transparent hover:border-white"
-            }  text-xl font-medium text-white hidden md:block cursor-pointer  transition p-2 border-2   w-fit  mb-5 mr-auto fixed top-6`}
-          >
-            MENU
-          </h1>
+          <Menu />
         </div>
 
         <div className="flex-1 ">
-          <img src={logo} alt="Vannamamalai" className="mx-auto " />
+          <Link to="/">
+            <img src={logo} alt="Vannamamalai" className="mx-auto " />
+          </Link>
         </div>
         <div className="hidden  md:flex flex-1 justify-end items-center gap-20">
           <img src={translate_Icon} alt="translate" />

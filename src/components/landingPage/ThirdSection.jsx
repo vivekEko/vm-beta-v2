@@ -14,14 +14,14 @@ const ThirdSection = () => {
           <h1 className="uppercase text-[#55111D] text-center md:text-left  w-[80%] mx-auto text-3xl md:text-4xl md:font-semibold">
             ‘Ponnadikkal Jeeyar’ who established the vanamamalai mutt
           </h1>
-          <p className="font-caladea text-center w-[80%] mx-auto mt-10 mb-5">
+          <p className="font-caladea text-center md:text-left w-[80%] mx-auto mt-10 mb-5">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
             pellentesque quam vitae ornare porta. Vivamus pretium eleifend risus
             laoreet pretium. Ut sit amet finibus metus, nec cursus lacus.{" "}
           </p>
 
           <div className="flex justify-center md:justify-start w-[80%] mx-auto ">
-            <button className="p-3 bg-[#282626] text-white w-fit  ">
+            <button className="p-3 bg-[#282626] text-white w-fit  active:scale-95 transition-all">
               READ MORE
             </button>
           </div>
