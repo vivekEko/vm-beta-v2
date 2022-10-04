@@ -73,7 +73,7 @@ const Header = () => {
   return (
     <header className="w-[90%] sm:w-[95%] mx-auto absolute top-0 left-0 right-0 pt-5">
       <div ref={ref}>
-        <h1
+        <button
           onClick={() => setMenuIsVisible(!menuIsVisible)}
           className={` ${
             menuIsVisible
@@ -82,7 +82,7 @@ const Header = () => {
           } text-2xl font-medium transition p-2 border-2   text-white w-fit ml-auto mb-5 md:hidden cursor-pointer fixed right-5 z-[999] `}
         >
           MENU
-        </h1>
+        </button>
 
         <div
           className={` ${

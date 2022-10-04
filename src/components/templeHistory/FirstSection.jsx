@@ -8,7 +8,7 @@ import temple from "../../assets/img/templeHistory/temple.png";
 
 const FirstSection = () => {
   return (
-    <section className="bg-[url('src/assets/img/templeHistory/first_section_bg.svg')] bg-no-repeat bg-cover bg-right-bottom  text-white ">
+    <section className="bg-[url('../src/assets/img/templeHistory/first_section_bg.svg')] bg-no-repeat bg-cover bg-right-bottom  text-white ">
       <div>
         <div className=" w-[85%] mx-auto  pt-80 md:pt-48 pb-5">
           <div className="md:hidden">

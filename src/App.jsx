@@ -11,7 +11,7 @@ import Header from "./components/globalComponents/Header";
 
 // Pages
 import LandingPage from "./pages/LandingPage";
-import AboutPage from "./pages/aboutPage";
+import AboutPage from "./pages/AboutPage";
 import OtherTemplesPage from "./pages/OtherTemplesPage";
 import TempleHistory from "./pages/TempleHistory";
 import { useEffect, useState } from "react";
@@ -27,7 +27,7 @@ function App() {
   }, [routePath]);
 
   return (
-    <div className="font-oswald relative">
+    <div className="font-oswald relative cursor-default">
       <Header />
       <Routes>
         <Route path="*" element={<LandingPage />} />

@@ -58,7 +58,7 @@ const Menu = () => {
 
   return (
     <div ref={ref} className=" ">
-      <h1
+      <button
         onClick={() => setMenuIsVisible(!menuIsVisible)}
         className={` ${
           menuIsVisible
@@ -67,7 +67,7 @@ const Menu = () => {
         } text-2xl font-medium transition p-2 border-2   text-white w-fit  mb-5  cursor-pointer fixed top-6 left-5 z-[999] hidden md:block `}
       >
         MENU
-      </h1>
+      </button>
 
       <div
         className={` ${
