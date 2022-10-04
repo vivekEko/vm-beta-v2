@@ -1,10 +1,11 @@
 // react
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
+import { useDetectClickOutside } from "react-detect-click-outside";
 // assets
 import logo from "../../assets/img/landingPage/vm_logo.png";
 import searchIcon from "../../assets/img/landingPage/searchIcon.png";
 import translate_Icon from "../../assets/img/landingPage/translate_Icon.png";
-import { Link } from "react-router-dom";
 
 const Header = () => {
   // local variables
@@ -55,6 +56,12 @@ const Header = () => {
   useEffect(() => {
     console.log(menuIsVisible);
   }, [menuIsVisible]);
+
+  const closeMenu = () => {
+    setMenuIsVisible(false);
+  };
+
+  const ref = useDetectClickOutside({ onTriggered: closeMenu });
   return (
     <header className="w-[90%] sm:w-[95%] mx-auto absolute top-0 left-0 right-0 pt-5">
       <div>
@@ -70,6 +77,7 @@ const Header = () => {
         </h1>
 
         <div
+          onClick={(e) => e.stopPropagation()}
           className={` ${
             menuIsVisible
               ? "block z-[999] fixed top-20 right-5 md:left-12 md:right-auto"

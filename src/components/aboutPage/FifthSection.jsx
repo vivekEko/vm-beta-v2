@@ -6,7 +6,7 @@ import flight_icon from "../../assets/img/templeHistory/flight.svg";
 import train_icon from "../../assets/img/templeHistory/train.svg";
 import bus_icon from "../../assets/img/templeHistory/bus.svg";
 
-const FourthSection = () => {
+const FifthSection = () => {
   return (
     <section className=" bg-[#FBEECB] md:bg-[#FFAF52] pb-10 md:pb-0">
       <div className="md:flex ">
@@ -74,7 +74,6 @@ const FourthSection = () => {
         <div className="hidden md:block md:w-[60%] ">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4061.7122564673027!2d77.65920354071015!3d8.491289527433942!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b046f33b0fb1281%3A0x393fcbb515073f46!2sDivyadesam79%20Sree%20Vanamamalai%20Thothatrinathan%20Perumal%20Temple%2C%20Thirucheer%20varamangai!5e0!3m2!1sen!2sin!4v1664777059543!5m2!1sen!2sin"
-            allowfullscreen=""
             loading="lazy"
             className="w-full h-full"
           ></iframe>
@@ -84,4 +83,4 @@ const FourthSection = () => {
   );
 };
 
-export default FourthSection;
+export default FifthSection;
